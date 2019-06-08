@@ -206,4 +206,227 @@ code {
   letter-spacing: 2px;
 }
 
+/*///////////////////////////
+/////////////////////////////
+/////////////////////////////
+//////// M O B I L E ////////
+/////////////////////////////
+/////////////////////////////
+///////////////////////////*/
+@media only screen and (max-width: 600px) {
+  .navBar {
+    width: 99vw;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+  }
+  .navBar .navLeft {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0% 0 0% 4%;
+  }
+  .navBar .navLeft .navLogo {
+    height: 60px;
+  }
+  .navBar .navRight {
+    width: 100%;
+  }
+  .navBar .navRight .navLinks {
+    text-align: center;
+  }
+  .navBar .navRight .navLinks .navLink {
+    margin: 0 2%;
+    font-size: 20px;
+  }
+
+  .mainTitle {
+    padding: 6%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 10px;
+  }
+  .mainTitle .mainTitleText {
+    font-size: 40px;
+  }
+  .mainTitle .mainTitleSubText {
+    font-size: 16px;
+  }
+
+  .homeContainer {
+    padding: 0 2% 2% 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .homeContainer .jumbo {
+    padding: 4% 0 6% 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+  }
+  .homeContainer .jumbo .jumboImg {
+    height: 330px;
+    width: 370px;
+  }
+  .homeContainer #snippets {
+    margin-top: 2%;
+    padding: 4%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(0px, auto);
+    grid-gap: 30px;
+  }
+  .homeContainer #snippets .snippetsHeader {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .homeContainer #snippets .snippetsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(0px, auto);
+    grid-gap: 30px;
+  }
+  .homeContainer #snippets .snippetItem {
+    padding: 4%;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .homeContainer #snippets .snippetItem .itemTitle {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 30px;
+  }
+  .homeContainer #snippets .snippetItem .itemDesc {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 18px;
+  }
+  .homeContainer #snippets .snippetItem .readMoreBtn {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+    width: 120px;
+  }
+
+  .siteFooter {
+    margin-top: 10%;
+    width: 103vw;
+  }
+}
+/*///////////////////////////
+/////////////////////////////
+/////////////////////////////
+//////// T A B L E T ////////
+/////////////////////////////
+/////////////////////////////
+///////////////////////////*/
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .navBar {
+    width: 99vw;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .navBar .navLeft {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0% 0 0% 4%;
+  }
+  .navBar .navLeft .navLogo {
+    height: 80px;
+  }
+  .navBar .navRight {
+    width: 100%;
+  }
+  .navBar .navRight .navLinks {
+    text-align: end;
+  }
+  .navBar .navRight .navLinks .navLink {
+    margin: 0 2%;
+    font-size: 20px;
+  }
+
+  .mainTitle {
+    padding: 1%;
+    grid-row-gap: 10px;
+  }
+  .mainTitle .mainTitleText {
+    font-size: 44px;
+  }
+  .mainTitle .mainTitleSubText {
+    font-size: 20px;
+  }
+
+  .homeContainer {
+    padding: 0 2% 2% 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .homeContainer .jumbo {
+    padding: 0 0 4% 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 0px;
+  }
+  .homeContainer .jumbo .jumboImg {
+    height: 380px;
+    width: 620px;
+  }
+  .homeContainer #snippets {
+    margin-top: 2%;
+    padding: 4%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(0px, auto);
+    grid-gap: 30px;
+  }
+  .homeContainer #snippets .snippetsHeader {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .homeContainer #snippets .snippetsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(0px, auto);
+    grid-gap: 30px;
+  }
+  .homeContainer #snippets .snippetItem {
+    padding: 4%;
+    width: 84vw;
+    border: 4px solid #c7c9cc;
+    box-shadow: 1px 1px 8px #dddddd;
+    grid-row-gap: 10px;
+  }
+  .homeContainer #snippets .snippetItem .itemTitle {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 30px;
+  }
+  .homeContainer #snippets .snippetItem .itemDesc {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 18px;
+  }
+  .homeContainer #snippets .snippetItem .readMoreBtn {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+    width: 120px;
+  }
+
+  .siteFooter {
+    margin-top: 10%;
+    width: 103vw;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
