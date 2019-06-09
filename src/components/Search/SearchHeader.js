@@ -2,8 +2,8 @@ import React from 'react';
 
 const SearchHeader = () => {
   return (
-    <div className="searchHeader">
-      <span className="headerText"></span>
+    <div className="sectionTitleHeader">
+      <span className="headerText">Search</span>
     </div>
   );
 };

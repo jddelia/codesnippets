@@ -2,7 +2,7 @@ import React from 'react';
 
 const SnippetsHeader = () => {
   return (
-    <div className="snippetsHeader">
+    <div className="sectionTitleHeader">
       <span className="headerText">Snippets</span>
     </div>
   );
