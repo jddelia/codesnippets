@@ -7,7 +7,7 @@ import { useSnippetsContext } from '../../contexts/SnippetsContext';
 
 const SearchContainer = ({ searchFilter }) => {
   const filteredSnippets = useSnippetsContext().filter(snippet => {
-    return snippet.title.toLowerCase().includes(searchFilter);
+    return snippet.title.toLowerCase().includes(searchFilter.toLowerCase());
   });
 
   const searchResults = filteredSnippets.map(snippet => {
