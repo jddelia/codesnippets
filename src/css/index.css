@@ -191,6 +191,25 @@ code {
   color: #ffffff;
 }
 
+.about {
+  height: 100vh;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.about .aboutText {
+  text-align: center;
+  width: 50vw;
+  padding: 2%;
+  border-top: 2px solid #dddddd;
+  color: #04122c;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
 .siteFooter {
   height: 150px;
   background: #eeeeee;
@@ -312,6 +331,18 @@ code {
     align-self: center;
     justify-self: center;
     width: 120px;
+  }
+
+  .about .aboutText {
+    text-align: center;
+    width: 90vw;
+    padding: 2%;
+    border-top: 2px solid #dddddd;
+    color: #04122c;
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 1.8;
   }
 
   .siteFooter {

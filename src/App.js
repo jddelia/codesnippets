@@ -5,6 +5,7 @@ import axios from 'axios';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Home from './components/Home/Home';
+import About from './components/About/About';
 import Footer from './components/Footer';
 
 import { SnippetsContext } from './contexts/SnippetsContext';
@@ -33,6 +34,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
         </Switch>
         <Footer />
       </SnippetsContext.Provider>
