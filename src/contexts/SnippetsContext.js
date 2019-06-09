@@ -4,7 +4,6 @@ const SnippetsContext = React.createContext();
 
 function useSnippetsContext() {
   const snippetsContext = useContext(SnippetsContext);
-  console.log(snippetsContext)
   return snippetsContext;
 };
 
