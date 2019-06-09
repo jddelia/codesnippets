@@ -191,6 +191,21 @@ code {
   color: #ffffff;
 }
 
+.search .searchHeader {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.search .searchHeader .headerText {
+  padding-bottom: 0.5%;
+  width: fit-content;
+  color: #04122c;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+  border-bottom: 6px solid #04122c;
+}
+
 .about {
   height: 100vh;
   padding: 2%;
