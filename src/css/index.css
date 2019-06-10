@@ -634,7 +634,7 @@ code {
   }
 
   .snippetPage {
-    padding: 2%;
+    padding: 1%;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(0px, auto);
