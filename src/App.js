@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Home from './components/Home/Home';
 import Search from './components/Search/Search';
 import About from './components/About/About';
+import SnippetPageContainer from './components/SnippetPage/SnippetPageContainer';
 import Footer from './components/Footer';
 
 import { SnippetsContext } from './contexts/SnippetsContext';
@@ -37,6 +38,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/search" component={Search} />
+          <Route exact path="/snippets/:id" component={SnippetPageContainer} />
         </Switch>
         <Footer />
       </SnippetsContext.Provider>

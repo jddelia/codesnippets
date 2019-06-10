@@ -9,6 +9,7 @@ const SnippetsContainer = () => {
     return (
       <SnippetCard
         key={snippet._id}
+        id={snippet._id}
         title={snippet.title}
         shortDesc={snippet.shortDesc}
       />
