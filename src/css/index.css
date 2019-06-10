@@ -396,7 +396,7 @@ code {
   line-height: 2;
 }
 .snippetPage .sourceImg {
-  margin-top: -6%;
+  margin-top: -4%;
   margin-bottom: -4%;
   margin-left: -6%;
   height: 700px;
@@ -647,11 +647,11 @@ code {
     font-size: 16px;
   }
   .snippetPage .sourceImg {
-    margin-top: -6%;
-    margin-bottom: -4%;
+    margin-top: -10%;
+    margin-bottom: -14%;
     margin-left: -14%;
-    height: 400px;
-    width: 400px;
+    height: 390px;
+    width: 390px;
   }
 
   .siteFooter {
