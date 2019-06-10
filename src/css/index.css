@@ -312,10 +312,12 @@ code {
   letter-spacing: 2px;
   line-height: 1.8;
 }
-.search .searchContainer .resultCard .readMoreBtn {
+.search .searchContainer .resultCard .readMoreLink {
   grid-column: 2;
   grid-row: 1/3;
   align-self: center;
+}
+.search .searchContainer .resultCard .readMoreBtn {
   height: 40px;
   width: 120px;
   border: 1px solid #04122c;
@@ -610,11 +612,12 @@ code {
     grid-column: 1;
     grid-row: 2;
   }
-  .search .searchContainer .resultCard .readMoreBtn {
+  .search .searchContainer .resultCard .readMoreLink {
     grid-column: 1;
     grid-row: 3;
-    align-self: center;
     justify-self: center;
+  }
+  .search .searchContainer .resultCard .readMoreBtn {
     width: 120px;
   }
 

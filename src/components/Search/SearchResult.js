@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const SearchResult = ({ title, shortDesc }) => {
+const SearchResult = ({ title, shortDesc, id }) => {
   return (
     <div className="resultCard">
       <div className="resultCardTitle">
@@ -11,7 +12,11 @@ const SearchResult = ({ title, shortDesc }) => {
         {`${shortDesc.substr(0, 100)}...`}
       </div>
 
-      <button className="readMoreBtn">Read More</button>
+      <Link to={`/snippets/${id}`}
+        className="readMoreLink"
+      >
+        <button className="readMoreBtn">Read More</button>
+      </Link>
     </div>
   );
 };

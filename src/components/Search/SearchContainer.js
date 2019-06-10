@@ -14,6 +14,7 @@ const SearchContainer = ({ searchFilter }) => {
     return (
       <SearchResult
         key={snippet._id}
+        id={snippet._id}
         title={snippet.title}
         shortDesc={snippet.shortDesc}
       />
