@@ -1,11 +1,42 @@
 import React from 'react';
 
 const MailingList = () => {
-  return (
-    <div className="mailingList">
-      <span>Want to Receive the Latest Snippets?</span>
-      <span>Join The Mailing List!</span>
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
 
+  return (
+    <div className="mailList">
+      <div className="mailListLogo">
+        <img
+          className="mailListImg"
+          src={require('../../assets/images/codesnippetslogomain.png')}
+          alt="codesnippets logo"
+        />
+      </div>
+
+      <div className="mailListTitle">
+        <span className="mailListTitleText">Join The Mailing List!</span>
+        <span className="mailListTitleSubText">No Spam.</span>
+      </div>
+
+      <form 
+        className="mailListForm"
+        onSubmit={handleSubmit}
+      >
+        <input
+          className="mailListInput"
+          type="text"
+          placeholder="Enter your email"
+        />
+
+        <button
+          className="mailListBtn"
+          type="submit"
+        >
+          Subscribe
+        </button>
+      </form>
     </div>
   );
 };
