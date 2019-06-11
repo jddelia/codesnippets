@@ -365,6 +365,7 @@ code {
   grid-gap: 20px;
 }
 .snippetPage .pageTitle {
+  text-align: center;
   margin-top: 4%;
   padding: 2%;
   justify-self: center;
