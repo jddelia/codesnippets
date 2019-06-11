@@ -22,7 +22,7 @@ const MailingList = ({ emailExists, onSubmit }) => {
     }
 
     setEmailInvalid(false);
-    await onSubmit(inputRef.current.value);
+    await onSubmit(inputRef.current.value.toLowerCase());
   }
 
   const emailError = emailInvalid ? (
