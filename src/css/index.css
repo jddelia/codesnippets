@@ -449,7 +449,20 @@ code {
   justify-items: center;
   grid-row-gap: 20px;
 }
+.mailList .mailListForm .emailInvalid {
+  position: relative;
+  grid-row: 1;
+  grid-column: 1;
+  bottom: 18px;
+  right: 26%;
+  color: #04122c;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
 .mailList .mailListForm .mailListInput {
+  grid-row: 1;
+  grid-column: 1;
   width: 70%;
   height: 30px;
   padding-left: 1%;
@@ -753,6 +766,17 @@ code {
     margin-top: 2%;
     padding: 2%;
     width: 80vw;
+  }
+  .mailList .mailListForm .emailInvalid {
+    position: relative;
+    grid-row: 1;
+    grid-column: 1;
+    bottom: 15px;
+    right: 30%;
+    color: #04122c;
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 2px;
   }
   .mailList .mailListForm .mailListInput {
     width: 90%;

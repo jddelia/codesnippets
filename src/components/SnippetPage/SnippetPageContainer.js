@@ -12,8 +12,8 @@ const SnippetPageContainer = ({ history, match }) => {
       window.scrollTo(0, 0);
     });
 
-    function fetchData(url) {
-      axios.get(url)
+    function fetchData() {
+      axios.get(`https://codesnippetapi.herokuapp.com/snippets/snippet/${match.params.id}`)
         .then(response => {
           setSnippet(response.data[0]);
         })
@@ -22,7 +22,7 @@ const SnippetPageContainer = ({ history, match }) => {
         });
     }
 
-    fetchData(`https://codesnippetapi.herokuapp.com/snippets/snippet/${match.params.id}`);
+    fetchData();
   }, [setSnippet]);
 
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MailingList from '../MailingList/MailingList';
+import MailingListContainer from '../MailingList/MailingListContainer';
 
 function createMarkup(string) {
   return {__html: string};
@@ -30,7 +30,7 @@ const SnippetPage = ({ snippet }) => {
         dangerouslySetInnerHTML={createMarkup(snippet.content)}
       />
 
-      <MailingList />
+      <MailingListContainer />
     </div>
   );
 };
