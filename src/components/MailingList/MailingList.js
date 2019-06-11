@@ -23,6 +23,7 @@ const MailingList = ({ emailExists, onSubmit }) => {
 
     setEmailInvalid(false);
     await onSubmit(inputRef.current.value.toLowerCase());
+    setTimeout(() => inputRef.current.value = "Subscribed. Thank You!", 1000);
   }
 
   const emailError = emailInvalid ? (
