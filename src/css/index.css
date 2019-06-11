@@ -768,15 +768,9 @@ code {
     width: 80vw;
   }
   .mailList .mailListForm .emailInvalid {
-    position: relative;
-    grid-row: 1;
-    grid-column: 1;
     bottom: 15px;
     right: 30%;
-    color: #04122c;
     font-size: 10px;
-    font-weight: 100;
-    letter-spacing: 2px;
   }
   .mailList .mailListForm .mailListInput {
     width: 90%;
