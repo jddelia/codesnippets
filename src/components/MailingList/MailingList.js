@@ -13,6 +13,13 @@ const MailingList = ({ emailExists, onSubmit }) => {
   const [emailInvalid, setEmailInvalid] = useState(false);
   const inputRef = useRef();
 
+  useEffect(() => {
+    if (emailExists) {
+      inputRef.current.value = "Subscriber Already Exists";
+      setEmailInvalid(true);
+    }
+  }, [emailExists])
+
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -29,13 +36,6 @@ const MailingList = ({ emailExists, onSubmit }) => {
   const emailError = emailInvalid ? (
     <label className="emailInvalid">Email Invalid</label>
   ) : null;
-
-  useEffect(() => {
-    if (emailExists) {
-      inputRef.current.value = "Subscriber Already Exists";
-      setEmailInvalid(true);
-    }
-  }, [emailExists])
 
   const inputErrorBorder = emailError ? redInputBorder : null;
 
