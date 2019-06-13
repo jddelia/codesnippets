@@ -33,7 +33,7 @@ const SearchContainer = ({ searchFilter }) => {
     <>
       <SearchDialog
         searchEntered={false}
-        totalResults={searchResults.length}
+        totalResults={0}
       />
     </>
   );
