@@ -18,7 +18,7 @@ const MailingList = ({ emailExists, onSubmit }) => {
       inputRef.current.value = "Subscriber Already Exists";
       setEmailInvalid(true);
     }
-  }, [emailExists])
+  }, [emailExists]);
 
   async function handleSubmit(e) {
     e.preventDefault();
