@@ -1,6 +1,11 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-const About = () => {
+const About = ({ history }) => {
+  history.listen(() => {
+    window.scrollTo(0, 1);
+  });
+
   return (
     <div className="about">
       <p className="aboutText">
@@ -12,4 +17,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default withRouter(About);

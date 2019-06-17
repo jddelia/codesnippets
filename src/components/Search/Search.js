@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
+import { withRouter } from 'react-router-dom';
 
 import SearchHeader from './SearchHeader';
 import SearchInput from './SearchInput';
 import SearchContainer from './SearchContainer';
 
-const Search = () => {
-  const [searchFilter, setSearchFilter] = useState('')
+const Search = ({ history }) => {
+  const [searchFilter, setSearchFilter] = useState('');
+
+  history.listen(() => {
+    window.scrollTo(0, 1);
+  });
 
   return (
     <div className="search">
@@ -16,4 +21,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default withRouter(Search);

@@ -7,11 +7,11 @@ import SnippetPage from './SnippetPage';
 const SnippetPageContainer = ({ history, match }) => {
   const [snippet, setSnippet] = useState(null);
 
-  useEffect(() => {
-    history.listen(() => {
-      window.scrollTo(0, 1);
-    });
+  history.listen(() => {
+    window.scrollTo(0, 1);
+  });
 
+  useEffect(() => {
     function fetchData() {
       axios.get(`https://codesnippetapi.herokuapp.com/snippets/snippet/${match.params.id}`)
         .then(response => {
