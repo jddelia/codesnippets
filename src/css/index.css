@@ -528,6 +528,15 @@ code {
   letter-spacing: 2px;
 }
 
+.codeSnip {
+  border: 1px solid #eee;
+  padding: 2px;
+  border-radius: 5px;
+  background: #eee;
+  color: #0b3a58;
+  box-shadow: 1px 1px 2px #cccccc;
+}
+
 /* LOADER */
 .lds-ring {
   display: inline-block;

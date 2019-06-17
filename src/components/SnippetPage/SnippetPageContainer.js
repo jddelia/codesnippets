@@ -9,7 +9,7 @@ const SnippetPageContainer = ({ history, match }) => {
 
   useEffect(() => {
     history.listen(() => {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 1);
     });
 
     function fetchData() {
