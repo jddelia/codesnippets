@@ -1,9 +1,14 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 import Jumbo from './Jumbo';
 import Snippets from './Snippets/Snippets';
 
-const Home = () => {
+const Home = ({ history }) => {
+  history.listen(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="homeContainer">
       <Jumbo />
@@ -12,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withRouter(Home);
