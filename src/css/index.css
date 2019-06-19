@@ -784,11 +784,11 @@ code {
   .sourceSnippet {
     background: #D8E5EC;
     border: 2px solid #eeeeee;
-    margin-left: -6%;
+    margin-left: -10%;
     min-height: 396.5px;
     max-height: 700px;
     max-width: 100vw;
-    min-width: 95vw;
+    min-width: 100vw;
   }
 
   .mailList {
